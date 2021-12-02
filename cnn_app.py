@@ -13,7 +13,7 @@ def import_and_predict(image_data, model):
         image = np.asarray(image)
         image = (image.astype(np.float32) / 255.0)
 
-        img_reshape = image[np.newaxis,...]
+        img_reshape = image.reshape(-1,28,28,1)
 
         prediction = model.predict(img_reshape)
         
