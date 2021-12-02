@@ -7,7 +7,7 @@ model = tf.keras.models.load_model('model_cnn.h5')
 
 def import_and_predict(image_data, model):
     
-        size = (75,75)    
+        size = (28,28)    
         image = ImageOps.fit(image_data, size, Image.ANTIALIAS)
         image = image.convert('RGB')
         image = np.asarray(image)
