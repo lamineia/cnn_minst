@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image, ImageOps
 import tensorflow as tf
 
-model = tf.keras.models.load_model('model_pourri2.h5')
+model = tf.keras.models.load_model('model_cnn.h5')
 
 def import_and_predict(image_data, model):
     
@@ -19,7 +19,7 @@ def import_and_predict(image_data, model):
         
         return prediction
 
-model = tf.keras.models.load_model('my_model.hdf5')
+model = tf.keras.models.load_model('model_cnn.h5')
 
 st.write("""
          # Letter prédiction
